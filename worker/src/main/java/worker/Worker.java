@@ -10,7 +10,7 @@ class Worker {
     try {
     	String pgHost = ((pgHost = System.getenv("POSTGRES_HOST")) != null) ? pgHost : "db";
         String pgPort = ((pgPort = System.getenv("POSTGRES_PORT")) != null) ? pgPort : "5432";
-        String pgDatabase = ((pgDatabase = System.getenv("POSTGRES_DATABASE")) != null) ? pgDatabase : "postgres";
+        String pgDatabase = ((pgDatabase = System.getenv("POSTGRES_DATABASE")) != null) ? pgDatabase : "postgresql";
         String pgUser = ((pgUser = System.getenv("POSTGRES_USER")) != null) ? pgUser : "postgres_user";
         String pgPassword = ((pgPassword = System.getenv("POSTGRES_PASSWORD")) != null) ? pgPassword : "postgres_password";
         // Syntax: jdbc:postgresql://host:port/database
