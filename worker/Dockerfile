@@ -6,7 +6,7 @@ COPY pom.xml /code/pom.xml
 RUN ["mvn", "dependency:resolve"]
 RUN ["mvn", "verify"]
 
-# Adding source, compile and package into a fat jar
+# Adding source, compile and package into a fat jar mmm
 COPY ["src/main", "/code/src/main"]
 RUN ["mvn", "package"]
 
