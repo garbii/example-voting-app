@@ -8,7 +8,7 @@ import org.json.JSONObject;
 class Worker {
   public static void main(String[] args) {
     try {
-    	String pgHost = ((pgHost = System.getenv("POSTGRES_HOST")) != null) ? pgHost :  "db";
+    	String pgHost = ((pgHost = System.getenv("POSTGRES_HOST")) != null) ? pgHost : "db";
         String pgPort = ((pgPort = System.getenv("POSTGRES_PORT")) != null) ? pgPort : "5432";
         String pgDatabase = ((pgDatabase = System.getenv("POSTGRES_DATABASE")) != null) ? pgDatabase : "postgres";
         String pgUser = ((pgUser = System.getenv("POSTGRES_USER")) != null) ? pgUser : "postgres_user";
